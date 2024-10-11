@@ -3,6 +3,76 @@
 <html lang="fr">
 
 <head>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Nina Carducci",
+		  "url": "http://127.0.0.1:5500/index.html",
+		  "logo": "https://www.nomdusite.com/logo.png",
+		  "sameAs": [
+			"https://www.facebook.com/nomduphotographe",
+			"https://www.instagram.com/nomduphotographe",
+			"https://twitter.com/nomduphotographe"
+		  ],
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "123 Rue de la Photographie",
+			"addressLocality": "Ville",
+			"addressRegion": "Région",
+			"postalCode": "75001",
+			"addressCountry": "FR"
+		  },
+		  "contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+33-1-23-45-67-89",
+			"contactType": "Service Client",
+			"areaServed": "FR",
+			"availableLanguage": ["Français", "Anglais"]
+		  },
+		  "founder": {
+			"@type": "Person",
+			"name": "Nom du Photographe",
+			"jobTitle": "Photographe professionnel",
+			"image": "https://www.nomdusite.com/photo-photographe.jpg"
+		  },
+		  "makesOffer": [
+			{
+			  "@type": "Offer",
+			  "itemOffered": {
+				"@type": "Service",
+				"name": "Shooting photo",
+				"description": "Séances photo professionnelles pour portraits, mariages et événements.",
+				"serviceType": "Photographie"
+			  },
+			  "priceCurrency": "EUR",
+			  "price": "200"
+			}
+		  ]
+		}
+		</script>
+		
+		<!-- Schema pour une image (photographie) individuelle -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Photograph",
+		  "author": {
+			"@type": "Person",
+			"name": "Nom du Photographe"
+		  },
+		  "contentUrl": "https://www.nomdusite.com/images/photo1.jpg",
+		  "datePublished": "2023-09-15",
+		  "description": "Superbe photo prise lors d'un mariage à Paris.",
+		  "inLanguage": "fr",
+		  "license": "https://creativecommons.org/licenses/by/4.0/",
+		  "publisher": {
+			"@type": "Organization",
+			"name": "Nom du Studio de Photographie"
+		  }
+		}
+		</script>
+		
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
