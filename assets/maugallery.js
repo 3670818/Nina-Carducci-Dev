@@ -150,7 +150,8 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i-1;
+          // Changement d'index
         }
       });
       next =
@@ -189,7 +190,8 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i+1;
+          // changement d'index
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
