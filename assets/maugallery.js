@@ -191,7 +191,7 @@
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i+1;
-          // changement d'index
+          // changement d'inde
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -241,8 +241,9 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      // changement sur cette ligne
+      $(".active.active-tag").removeClass("active active-tag");
+      $(this).addClass("active-tag active");
 
       var tag = $(this).data("images-toggle");
 
